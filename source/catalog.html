@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="logo" href="#">
+        <img src="img/index/logo-pink.svg" width="74" height="23" alt="Pink.">
+      </a>
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню </span></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="page-name visually-hidden">Приложение Pink</h1>
+    <section class="page-intro">
+      <h2 class="page-intro__title visually-hidden">Галерея</h2>
+      <div class="page-intro__wrapper">
+        <p class="page-intro__text">Фотографии пользователей</p>
+      </div>
+      <div class="page-intro__description catalog-description">
+        <p class="page-intro__description-text catalog-description__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2 class="visually-hidden">Галлерея фотографий</h2>
+      <div class="panorama card">
+        <img class="panorama__img card__img" src="img/catalog/panorama.jpg" alt="Панорама дня">
+        <div class="panorama__description card__description">
+          <span class="panorama__autor card__autor">Анна</span>
+          <span class="panorama__time card__time">(5 минут назад)</span>
+          <p class="panorama__text card__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <span class="card__likes">Нравится:</span>
+          <span class="card__likes-number">215</span>
+        </div>
+      </div>
+      <div class="gallery__wrapper">
+        <div class="card">
+          <img class="card__img" src="img/catalog/photo-1.jpg" alt="Фотография пользователя">
+          <div class="card__description">
+            <span class="card__autor">Левон</span>
+            <span class="card__time">(5 часов назад)</span>
+            <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <span class="card__likes">Нравится:</span>
+            <span class="card__likes-number">356</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="img/catalog/photo-2.jpg" alt="Фотография пользователя">
+          <div class="card__description">
+            <span class="card__autor">Антон</span>
+            <span class="card__time">(12 часов назад)</span>
+            <p class="card__text">Соседи будут рады!</p>
+            <span class="card__likes">Нравится:</span>
+            <span class="card__likes-number">666</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="img/catalog/photo-3.jpg" alt="Фотография пользователя">
+          <div class="card__description">
+            <span class="card__autor">Борис</span>
+            <span class="card__time">(20 часов назад)</span>
+            <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <span class="card__likes">Нравится:</span>
+            <span class="card__likes-number">215</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="img/catalog/photo-4.jpg" alt="Фотография пользователя">
+          <div class="card__description">
+            <span class="card__autor">Сергей</span>
+            <span class="card__time">(25 часов назад)</span>
+            <p class="card__text">Самая кубанская в мире!</p>
+            <span class="card__likes">Нравится:</span>
+            <span class="card__likes-number">4</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="img/catalog/photo-5.jpg" alt="Фотография пользователя">
+          <div class="card__description">
+            <span class="card__autor">Максим</span>
+            <span class="card__time">(40 часов назад)</span>
+            <p class="card__text">Где снег-то?</p>
+            <span class="card__likes">Нравится:</span>
+            <span class="card__likes-number">150</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="img/catalog/photo-6.jpg" alt="Фотография пользователя">
+          <div class="card__description">
+            <span class="card__autor">Надежда</span>
+            <span class="card__time">(45 часов назад)</span>
+            <p class="card__text">Всем GM и взаимные лайки!</p>
+            <span class="card__likes">Нравится:</span>
+            <span class="card__likes-number">2560</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="upload">
+      <h2 class="visually-hidden">Загрузить свое фото.</h2>
+      <div class="upload__wrapper">
+        <div class="upload__description catalog-description">
+          <p class="upload__description-text catalog-description__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <form class="upload__user-photo user-photo" action="https://echo.htmlacademy.ru/" method="post">
+          <img class="user-photo__image" src="img/catalog/process-image.jpg" alt="Обработанное фото">
+          <div class="process">
+            <div class="process__range range">
+              <label class="range__label" for="crop"><span class="range__label-name">Обрезать фото</span></label>
+              <input class="range__input" type="range" id="crop" name="crop" min="0" max="100" step="1">
+            </div>
+            <div class="process__range range">
+              <label class="range__label" for="fill"><span class="range__label-name">Залить фото</span></label>
+              <input class="range__input" type="range" id="fill" name="fill" min="0" max="100" step="1">
+            </div>
+            <div class="process__range range">
+              <label class="range__label" for="contrast"><span class="range__label-name">Изменить контрастность</span></label>
+              <input class="range__input" type="range" id="contrast" name="contrast" min="0" max="100" step="1">
+            </div>
+          </div>
+          <button class="user-photo__button button-post" type="submit">Запостить</button>
+          <button class="user-photo__button button-reset" type="reset">Отмена</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/index/logo-footer.svg" alt="Pink" >
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link-twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link-youtube" href="#"><span class="visually-hidden">YouTube</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a class="copyright__link" href=""><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
