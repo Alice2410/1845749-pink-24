@@ -1,0 +1,38 @@
+.upload {
+  background-color: $light-gray;
+
+  .upload__description {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    background-color: $white;
+    padding: 50px 40px;
+    margin: 0;
+  }
+
+  .upload__user-photo {
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+
+  .upload__button {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+    box-sizing: border-box;
+    min-width: 280px;
+  }
+
+  .upload__button-post {
+    color: $pink;
+    margin-bottom: 12px;
+  }
+
+  .upload__button-reset {
+    color: $blue-gray;
+    opacity: 0.1;
+  }
+}

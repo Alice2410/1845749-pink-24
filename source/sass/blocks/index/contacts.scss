@@ -1,0 +1,36 @@
+.contacts {
+  .contacts__wrapper {
+    padding: 47px 20px 22px;
+    text-align: center;
+  }
+
+  .contacts__heading {
+    font-family: $font-family;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    color: $blue-gray;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts__text {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    color: $blue-gray;
+  }
+
+  .contacts__link {
+    text-decoration: none;
+  }
+
+  .contacts__information {
+    font-family: $font-family;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 300;
+    color: $pink;
+  }
+}
