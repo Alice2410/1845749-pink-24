@@ -1,0 +1,17 @@
+.app {
+  background-color: $light-gray;
+
+  .app__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .app__item {
+    list-style-type: none;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

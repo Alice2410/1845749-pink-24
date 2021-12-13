@@ -1,0 +1,57 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  .card__img {
+    padding: 0 20px;
+  }
+
+  .card__description {
+    background-color: $light-gray;
+    margin: 0 20px;
+    padding: 25px 45px 25px 15px;
+  }
+
+  .card__author {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .card__time {
+    font-family: $font-family;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .card__text {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .card__likes {
+    font-family: $font-family;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $pink;
+    margin-left: 31px;
+  }
+
+  .card__likes-number {
+    font-family: $font-family;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $pink;
+  }
+}

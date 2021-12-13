@@ -4,54 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Pink</title>
 </head>
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="logo" href="#">
-        <img src="img/index/logo-pink.svg" width="74" height="23" alt="Pink.">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-img" src="img/index/logo-pink.svg" width="74" height="23" alt="Pink.">
       </a>
       <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню </span></button>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
+      <section class="page-intro">
+        <h2 class="visually-hidden">Скачатайте приложение на ваше устройство</h2>
+        <div class="page-intro__hand">
+          <p class="page-intro__text">Взгляните на жизнь иначе!</p>
+        </div>
+        <div class="download-app">
+          <a class="download-app__link" href="#">Скачать приложение</a>
+          <div class="download-app__os">
+            <a class="download-app__os-link" href="#"><span>Скачать для iOS/OS X</span></a>
+            <a class="download-app__os-link" href="#"><span>Скачать для Android</span></a>
+            <a class="download-app__os-link" href="#"><span>Скачать для Windows</span></a>
+          </div>
+          <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
     </div>
   </header>
   <main class="page-main">
-    <h1 class="page-name visually-hidden">Приложение Pink</h1>
-    <section class="page-intro">
-      <h2 class="page-intro__title visually-hidden">Скачатайте приложение на ваше устройство</h2>
-      <div class="page-intro__hand">
-        <p class="page-intro__text">Взгляните на жизнь иначе!</p>
-        <img class="page-intro__hand-image" src="img/index/intro-hand.png" alt="Рука с телефоном." >
-      </div>
-      <div class="download-app">
-        <a class="download-app__link" href="#">Скачать приложение</a>
-        <div class="download-app__os os">
-          <a class="os__link" href="#"><span>Скачать для iOS/OS X</span></a>
-          <a class="os__link" href="#"><span>Скачать для Android</span></a>
-          <a class="os__link" href="#"><span>Скачать для Windows</span></a>
-        </div>
-        <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </section>
+    <h1 class="visually-hidden">Приложение Pink</h1>
     <section class="benefits">
       <div class="benefits__wrapper">
-        <h2 class="benefits__heading visually-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <p class="benefits__slogan">Устали от серости мегаполиса? <br>Нам есть, что вам предложить!</p>
         <ul class="benefits__list">
           <li class="benefits__item">
@@ -65,14 +65,14 @@
           <li class="benefits__item">
             <h3 class="benefits__heading">Заводит новых друзей</h3>
             <p class="benefits__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <img class="benefits__phone-image" src="img/index/benefits-phone.png" alt="Телефон с картинкой.">
           </li>
         </ul>
-        <img class="benefits__phone-image" src="img/index/benefits-phone.png" alt="Телефон с картинкой.">
       </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
-        <h2 class="reviews__title">Отзывы о приложении</h2>
+        <h2 class="reviews__title visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
@@ -90,59 +90,64 @@
     </section>
     <section class="price">
       <div class="price__wrapper">
-        <h2 class="price__title">Стоимость и описание тарифов</h2>
+        <h2 class="visually-hidden">Стоимость и описание тарифов</h2>
         <table class="price__table table">
           <thead class="table__head">
             <tr class="table__head-row">
               <th class="price__tariff price__tariff-empty"></th>
               <th class="price__tariff">
-                <span class="tariff-name">База</span><br>
-                <span class="tariff-cost">1,99 USD</span>
+                <span class="price__tariff-name">База</span><br>
+                <span class="price__tariff-cost">1,99 USD</span>
               </th>
               <th class="price__tariff">
-                <span class="tariff-name">Стандарт</span><br>
-                <span class="tariff-cost">3,99 USD</span>
+                <span class="price__tariff-name">Стандарт</span><br>
+                <span class="price__tariff-cost">3,99 USD</span>
               </th>
               <th class="price__tariff">
-                <span class="tariff-name">Анлим</span><br>
-                <span class="tariff-cost">9,99 USD</span>
+                <span class="price__tariff-name">Анлим</span><br>
+                <span class="price__tariff-cost">9,99 USD</span>
               </th>
             </tr>
             <tr>
-              <td class="table-cell table-cell--option">Розовый фильтр</td>
-              <td class="table-cell table-cell--yes"><span class="table-cell__text">да</span></td>
-              <td class="table-cell table-cell--yes"><span class="table-cell__text">да</span></td>
-              <td class="table-cell table-cell--yes"><span class="table-cell__text">да</span></td>
+              <td class="table__cell table__cell--option">Розовый фильтр</td>
+              <td class="table__cell table__cell--yes"><span class="table__cell-text">да</span></td>
+              <td class="table__cell table__cell--yes"><span class="table__cell-text">да</span></td>
+              <td class="table__cell table__cell--yes"><span class="table__cell-text">да</span></td>
             </tr>
             <tr>
-              <td class="table-cell table-cell--option">Смайлики</td>
-              <td class="table-cell table-cell--no"><span class="table-cell__text">нет</span></td>
-              <td class="table-cell table-cell--yes"><span class="table-cell__text">да</span></td>
-              <td class="table-cell table-cell--yes"><span class="table-cell__text">да</span></td>
+              <td class="table__cell table__cell--option">Смайлики</td>
+              <td class="table__cell table__cell--no"><span class="table__cell-text">нет</span></td>
+              <td class="table__cell table__cell--yes"><span class="table__cell-text">да</span></td>
+              <td class="table__cell table__cell--yes"><span class="table__cell-text">да</span></td>
             </tr>
             <tr>
-              <td class="table-cell table-cell--option">Комментарии</td>
-              <td class="table-cell table-cell--no"><span class="table-cell__text">нет</span></td>
-              <td class="table-cell table-cell--no"><span class="table-cell__text">нет</span></td>
-              <td class="table-cell table-cell--yes"><span class="table-cell__text">да</span></td>
+              <td class="table__cell table__cell--option">Комментарии</td>
+              <td class="table__cell table__cell--no"><span class="table__cell-text">нет</span></td>
+              <td class="table__cell table__cell--no"><span class="table__cell-text">нет</span></td>
+              <td class="table__cell table__cell--yes"><span class="table__cell-text">да</span></td>
             </tr>
           </thead>
         </table>
+        <p class="price__toggles slider">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__heading">Остались вопросы?<br>Свяжитесь с нами!</p>
-        <div class="contacts__phone phone">
+        <div class="contacts__phone">
           <p class="contacts__text">Звоните:</p>
-          <a class="link phone__link" href="tel:+78125556666">
+          <a class="contacts__phone-link contacts__link" href="tel:+78125556666">
             <span class="contacts__information contacts__phone-number">+7 (812) 555-66-66</span>
           </a>
         </div>
-        <div class="contacts__email email">
+        <div class="contacts__email">
           <p class="contacts__text">Пишите:</p>
-          <a class="link email__link" href="mailto:mail@htmlacademy.ru">
+          <a class="contacts__email-link contacts__link" href="mailto:mail@htmlacademy.ru">
             <span class="contacts__information contacts__email-address">mail@htmlacademy.ru</span>
           </a>
         </div>
@@ -150,10 +155,13 @@
           <p class="contacts__text">Приезжайте в гости:</p>
           <span class="contacts__information contacts__office-address">ул. Большая<br> Конюшенная, 19/8</span>
         </div>
-        <div class="contacts__map">
+      </div>
+      <section class="map">
+        <h2 class="visually-hidden">Наше расположение</h2>
+        <div class="map__wrapper">
           <img class="contacts__map-image" src="img/index/map.jpg" alt="Наше местонахождение" width="320" height="200">
         </div>
-      </div>
+      </section>
     </section>
   </main>
   <footer class="page-footer">
