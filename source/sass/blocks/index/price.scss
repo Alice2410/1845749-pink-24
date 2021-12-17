@@ -1,6 +1,19 @@
 .price {
   background-color: $light-gray;
 
+  .price__wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 50px 130px;
+    }
+  }
+
   .price__tariff {
     background-color: $blue-gray;
   }

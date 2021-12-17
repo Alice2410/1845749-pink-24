@@ -1,0 +1,46 @@
+.diagram {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      background-color: $light-gray;
+    }
+
+    .diagram__wrapper {
+      display: flex;
+      padding: 54px 20px;
+
+      @media (min-width: $desktop-width) {
+        padding: 17px 130px;
+      }
+    }
+
+    .diagram__image-wrapper {
+      margin-right: 74px;
+    }
+
+    .diagram__image {
+      width: 238px;
+      height: 276px;
+
+      @media (min-width: $desktop-width) {
+        width: 298px;
+        height: 345px;
+      }
+    }
+
+    .diagram__heading {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: $black;
+      width: 170px;
+    }
+
+    .diagram__link {
+      color: $pink;
+    }
+  }
+}

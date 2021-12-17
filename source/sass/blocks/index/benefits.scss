@@ -1,18 +1,81 @@
 .benefits {
+  background-color: $light-gray;
+
   .benefits__wrapper {
     margin: 0;
     padding: 0;
   }
 
+  .benefits__phone {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 40px 130px;
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+  }
+
+  .benefits__phone-wrapper {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .benefits__phone-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    order: 2;
+
+    @media (min-width: $tablet-width) {
+      order: 0;
+    }
+
+    &--hidden {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: block;
+      }
+    }
+  }
+
   .benefits__list {
-    background-color: $light-gray;
     text-align: center;
     margin: 0;
     padding: 53px 20px 0;
+
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      padding-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0 20px;
+    }
   }
 
   .benefits__item {
     list-style-type: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   .benefits__slogan {
@@ -24,6 +87,7 @@
     text-align: center;
     padding: 46px 20px 70px;
     margin: 0;
+    background-color: $white;
   }
 
   .benefits__heading {
@@ -32,6 +96,12 @@
     line-height: 24px;
     font-weight: 700;
     color: $black;
+
+    @media (min-width: $desktop-width) {
+      width: 140px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
   }
 
   .benefits__text {
@@ -40,5 +110,10 @@
     line-height: 24px;
     font-weight: 400;
     color: $blue-gray;
+
+    @media (min-width: $desktop-width) {
+      width: 190px;
+      margin: 0 auto;
+    }
   }
 }
