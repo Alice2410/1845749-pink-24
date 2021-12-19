@@ -1,4 +1,14 @@
 .registration {
+  .registration__wrapper {
+    @media (min-width: $tablet-width) {
+      padding: 0 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 130px;
+    }
+  }
+
   .registration__description {
     font-family: $font-family;
     font-size: 14px;
@@ -6,6 +16,22 @@
     font-weight: 400;
     text-align: center;
     padding: 54px 20px;
-    margin: 0;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      padding: 100px 115px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 100px 0;
+    }
+  }
+
+  .registration__description-inner {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }

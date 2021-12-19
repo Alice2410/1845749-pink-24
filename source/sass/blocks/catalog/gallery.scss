@@ -1,4 +1,20 @@
 .gallery {
+  .gallery__card-wrapper {
+    @media (min-width: $tablet-width) {
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 130px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 54px 20px;
+    }
+  }
+
   .gallery__description {
     font-family: $font-family;
     font-size: 14px;

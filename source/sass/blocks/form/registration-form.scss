@@ -1,13 +1,86 @@
 .registration-form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    .registration-form__personal-data-section {
+      order: -5;
+    }
+
+    .registration-form__achievements-section {
+      order: -2;
+    }
+
+    .registration-form__user-data-section {
+      order: -3;
+    }
+
+    .registration-form__app-section {
+      order: -4;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .registration-form__personal-data-section {
+      min-width: 435px;
+    }
+
+    .registration-form__app-section {
+      min-width: 435px;
+    }
+
+    .registration-form__user-data-section {
+      min-width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .registration-form__achievements-section {
+      min-width: 100%;
+    }
+  }
+
   .registration-form__fieldset {
     padding: 42px 20px;
     margin: 0;
     border: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 42px 0;
+    }
   }
 
   .registration-form__fieldset-wrapper {
     background-color: $light-gray;
     padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+    }
+  }
+
+  .registration-form__personal-data {
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .registration-form__user-data {
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .registration-form__text-label {
@@ -20,14 +93,24 @@
     display: inline-block;
     padding-left: 23px;
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .registration-form__user-data-label {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
   }
 
   .registration-form__text-input {
     width: 100%;
     padding: 23px 20px;
     margin: 0;
-    margin-bottom: 25px;
-    max-width: 276px;
+    box-sizing: border-box;
 
     &::placeholder {
       font-family: $font-family;
@@ -50,6 +133,29 @@
     padding: 0;
   }
 
+  .registration-form__user-data-section-legend {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  .registration-form__button-wrapper {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .registration-form__button {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
   .registration-form__hint {
     font-family: $font-family;
     font-size: 14px;
@@ -61,6 +167,10 @@
     padding: 0;
     margin: 0;
     margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   .registration-form__asterisk {
