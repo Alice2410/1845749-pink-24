@@ -1,4 +1,15 @@
 .emotions {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 100%;
+  }
+
   .emotions__input {
     font-family: $font-family;
     font-size: 18px;
@@ -6,10 +17,11 @@
     font-weight: 400;
     color: $blue-gray;
     min-width: 276px;
+    width: 100%;
     min-height: 197px;
     padding: 22px 25px;
     margin: 0;
-    margin-top: -20px;
+    box-sizing: border-box;
 
     &::placeholder {
       font-family: $font-family;

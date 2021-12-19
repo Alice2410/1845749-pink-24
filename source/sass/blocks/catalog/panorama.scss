@@ -1,0 +1,17 @@
+.panorama {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  .panorama__description {
+    @media (min-width: $tablet-width) {
+      margin: 0 20px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 130px;
+    }
+  }
+}

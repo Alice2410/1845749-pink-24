@@ -8,28 +8,31 @@
   <title>Pink</title>
 </head>
 <body class="page__body">
+  <h1 class="visually-hidden">Приложение Pink</h1>
   <header class="page-header page-header--basic-background">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-img" src="img/index/logo-pink.svg" width="74" height="23" alt="Pink.">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню </span></button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__navigation">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-img" src="img/index/logo-pink.svg" width="74" height="23" alt="Pink.">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню </span></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="page-intro">
         <h2 class="visually-hidden">Конкурс на путешествие</h2>
         <div class="page-intro__wrapper">
@@ -39,27 +42,29 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Приложение Pink</h1>
     <section class="registration">
       <h2 class="registration__title visually-hidden">Зарегистрируйся для участия в конкурсе</h2>
       <div class="registration__wrapper">
-        <p class="registration__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="registration__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="registration__description-inner">Пожалуйста, заполните форму ниже:</span>
+        </p>
         <form class="registration-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="registration-form__fieldset">
-            <div class="registration-form__surname">
+          <fieldset class="registration-form__fieldset registration-form__personal-data-section">
+            <div class="registration-form__surname registration-form__personal-data">
               <label class="registration-form__text-label" for="surname">Фамилия:</label>
               <input class="registration-form__text-input" type="text" name="user-surname" id="surname" placeholder="Укажите фамилию*" required>
             </div>
-            <div class="registration-form__name">
+            <div class="registration-form__name registration-form__personal-data">
               <label class="registration-form__text-label" for="name">Имя:</label>
               <input class="registration-form__text-input" type="text" name="user-name" id="name" placeholder="Введите ваше имя*" required>
             </div>
-            <div class="registration-form__patronymic">
+            <div class="registration-form__patronymic registration-form__personal-data">
               <label for="patronymic" class="registration-form__text-label">Отчество:</label>
               <input class="registration-form__text-input" type="text" name="user-patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
-          <div class="registration-form__fieldset-wrapper">
+          <div class="registration-form__fieldset-wrapper registration-form__achievements-section">
             <fieldset class="registration-form__fieldset achievements">
               <legend class="registration-form__legend achievements__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="achievements__list">
@@ -102,17 +107,18 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="registration-form__fieldset">
-            <div class="registration-form__user-phone">
-              <label class="registration-form__text-label" for="user-phone">Номер телефона</label>
+          <fieldset class="registration-form__fieldset registration-form__user-data-section">
+            <legend class="registration-form__legend registration-form__user-data-section-legend">Контактная информация</legend>
+            <div class="registration-form__user-phone registration-form__user-data">
+              <label class="registration-form__text-label registration-form__user-data-label" for="user-phone">Номер телефона</label>
               <input class="registration-form__text-input" type="text" name="user-phone" id="user-phone" placeholder="Номер, пожалуйста">
             </div>
-            <div class="registration-form__user-email">
-              <label class="registration-form__text-label" for="user-email">Адрес почты</label>
+            <div class="registration-form__user-email registration-form__user-data">
+              <label class="registration-form__text-label registration-form__user-data-label" for="user-email">Адрес почты</label>
               <input class="registration-form__text-input" type="text" name="user-email" id="user-email" placeholder="Введите почту*" required>
             </div>
           </fieldset>
-          <div class="registration-form__fieldset-wrapper">
+          <div class="registration-form__fieldset-wrapper registration-form__app-section">
             <fieldset class="registration-form__fieldset app">
             <legend class="registration-form__legend app__legend">С каким приложением путешествовали?</legend>
             <ul class="app__list">
@@ -141,10 +147,12 @@
               <label class="registration-form__legend emotions__label" for="emotions">Опишите свои эмоции</label>
               <textarea  class="emotions__input" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="registration-form__button button" type="submit">
-            Отправить форму
-          </button>
-          <p class="registration-form__hint"><span class="registration-form__asterisk">*</span> — обязательные поля</p>
+          <div class="registration-form__button-wrapper">
+            <button class="registration-form__button button" type="submit">
+              Отправить форму
+            </button>
+            <p class="registration-form__hint"><span class="registration-form__asterisk">*</span> — обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>

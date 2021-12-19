@@ -8,28 +8,31 @@
   <title>Pink</title>
 </head>
 <body class="page__body">
+  <h1 class="visually-hidden">Приложение Pink</h1>
   <header class="page-header page-header--basic-background">
     <div class="page-header__wrapper">
-      <a class="logo" href="#">
-        <img src="img/index/logo-pink.svg" width="74" height="23" alt="Pink.">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню </span></button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__navigation">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-img" src="img/index/logo-pink.svg" width="74" height="23" alt="Pink.">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню </span></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="page-intro">
         <h2 class="visually-hidden">Галерея</h2>
         <div class="page-intro__wrapper">
@@ -39,7 +42,6 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Приложение Pink</h1>
     <section class="gallery">
       <h2 class="visually-hidden">Галлерея фотографий</h2>
       <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
@@ -54,64 +56,66 @@
             <span class="card__likes-number">215</span>
           </div>
         </div>
-        <div class="card">
-          <img class="card__img" src="img/catalog/photo-1.jpg" alt="Фотография пользователя">
-          <div class="card__description">
-            <span class="card__author">Левон</span>
-            <span class="card__time">(5 часов назад)</span>
-            <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <span class="card__likes">Нравится:</span>
-            <span class="card__likes-number">356</span>
+        <div class="gallery__card-wrapper">
+          <div class="card">
+            <img class="card__img" src="img/catalog/photo-1.jpg" alt="Фотография пользователя">
+            <div class="card__description">
+              <span class="card__author">Левон</span>
+              <span class="card__time">(5 часов назад)</span>
+              <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <span class="card__likes">Нравится:</span>
+              <span class="card__likes-number">356</span>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="img/catalog/photo-2.jpg" alt="Фотография пользователя">
-          <div class="card__description">
-            <span class="card__author">Антон</span>
-            <span class="card__time">(12 часов назад)</span>
-            <p class="card__text">Соседи будут рады!</p>
-            <span class="card__likes">Нравится:</span>
-            <span class="card__likes-number">666</span>
+          <div class="card">
+            <img class="card__img" src="img/catalog/photo-2.jpg" alt="Фотография пользователя">
+            <div class="card__description">
+              <span class="card__author">Антон</span>
+              <span class="card__time">(12 часов назад)</span>
+              <p class="card__text">Соседи будут рады!</p>
+              <span class="card__likes">Нравится:</span>
+              <span class="card__likes-number">666</span>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="img/catalog/photo-3.jpg" alt="Фотография пользователя">
-          <div class="card__description">
-            <span class="card__author">Борис</span>
-            <span class="card__time">(20 часов назад)</span>
-            <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <span class="card__likes">Нравится:</span>
-            <span class="card__likes-number">215</span>
+          <div class="card">
+            <img class="card__img" src="img/catalog/photo-3.jpg" alt="Фотография пользователя">
+            <div class="card__description">
+              <span class="card__author">Борис</span>
+              <span class="card__time">(20 часов назад)</span>
+              <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="card__likes">Нравится:</span>
+              <span class="card__likes-number">215</span>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="img/catalog/photo-4.jpg" alt="Фотография пользователя">
-          <div class="card__description">
-            <span class="card__author">Сергей</span>
-            <span class="card__time">(25 часов назад)</span>
-            <p class="card__text">Самая кубанская в мире!</p>
-            <span class="card__likes">Нравится:</span>
-            <span class="card__likes-number">4</span>
+          <div class="card">
+            <img class="card__img" src="img/catalog/photo-4.jpg" alt="Фотография пользователя">
+            <div class="card__description">
+              <span class="card__author">Сергей</span>
+              <span class="card__time">(25 часов назад)</span>
+              <p class="card__text">Самая кубанская в мире!</p>
+              <span class="card__likes">Нравится:</span>
+              <span class="card__likes-number">4</span>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="img/catalog/photo-5.jpg" alt="Фотография пользователя">
-          <div class="card__description">
-            <span class="card__author">Максим</span>
-            <span class="card__time">(40 часов назад)</span>
-            <p class="card__text">Где снег-то?</p>
-            <span class="card__likes">Нравится:</span>
-            <span class="card__likes-number">150</span>
+          <div class="card">
+            <img class="card__img" src="img/catalog/photo-5.jpg" alt="Фотография пользователя">
+            <div class="card__description">
+              <span class="card__author">Максим</span>
+              <span class="card__time">(40 часов назад)</span>
+              <p class="card__text">Где снег-то?</p>
+              <span class="card__likes">Нравится:</span>
+              <span class="card__likes-number">150</span>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="img/catalog/photo-6.jpg" alt="Фотография пользователя">
-          <div class="card__description">
-            <span class="card__author">Надежда</span>
-            <span class="card__time">(45 часов назад)</span>
-            <p class="card__text">Всем GM и взаимные лайки!</p>
-            <span class="card__likes">Нравится:</span>
-            <span class="card__likes-number">2560</span>
+          <div class="card">
+            <img class="card__img" src="img/catalog/photo-6.jpg" alt="Фотография пользователя">
+            <div class="card__description">
+              <span class="card__author">Надежда</span>
+              <span class="card__time">(45 часов назад)</span>
+              <p class="card__text">Всем GM и взаимные лайки!</p>
+              <span class="card__likes">Нравится:</span>
+              <span class="card__likes-number">2560</span>
+            </div>
           </div>
         </div>
       </div>
@@ -121,7 +125,9 @@
       <div class="upload__wrapper">
         <p class="upload__description">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload__user-photo" action="https://echo.htmlacademy.ru/" method="post">
-          <img class="upload__user-photo-image" src="img/catalog/process-image.jpg" alt="Обработанное фото">
+          <div class="upload__user-photo-wrapper">
+            <img class="upload__user-photo-image" src="img/catalog/process-image.jpg" alt="Обработанное фото">
+          </div>
           <div class="process">
             <div class="process__range range">
               <label class="range__label" for="crop"><span class="range__label-name">Обрезать фото</span></label>
@@ -136,8 +142,10 @@
               <input class="range__input" type="range" id="contrast" name="contrast" min="0" max="100" step="1">
             </div>
           </div>
-          <button class="upload__button upload__button-post" type="submit">Запостить</button>
-          <button class="upload__button upload__button-reset" type="reset">Отмена</button>
+          <div class="upload__button-wrapper">
+            <button class="upload__button upload__button-post" type="submit">Запостить</button>
+            <button class="upload__button upload__button-reset" type="reset">Отмена</button>
+          </div>
         </form>
       </div>
     </section>
