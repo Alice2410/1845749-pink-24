@@ -36,11 +36,34 @@
       font-size: 30px;
       line-height: 36px;
       color: $black;
-      width: 170px;
+
+      @media (min-width: $desktop-width) {
+        line-height: 30px;
+      }
+    }
+
+    .diagram__heading-second-line {
+      display: block;
+
+      @media (min-width: $desktop-width) {
+        display: inline;
+      }
+    }
+
+    .diagram__text {
+      @media (min-width: $desktop-width) {
+        font-size: 18px;
+        line-height: 30px;
+      }
     }
 
     .diagram__link {
       color: $pink;
+
+      @media (min-width: $desktop-width) {
+        font-size: 18px;
+        line-height: 30px;
+      }
     }
   }
 }

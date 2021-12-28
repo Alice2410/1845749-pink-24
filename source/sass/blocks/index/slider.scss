@@ -1,0 +1,33 @@
+.slider {
+  .slider__toggle {
+    padding: 0;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 50%;
+    background-color: fade-out($blue-gray, 0.7);
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+
+    &:hover:not(.slider__toggle--current) {
+      background-color: fade-out($blue-gray, 0.4);
+    }
+
+    &:focus:not(.slider__toggle--current) {
+      outline: 3px solid $green;
+    }
+
+    &:active:not(.slider__toggle--current) {
+      outline: none;
+      background-color: fade-out($blue-gray, 0.9);
+    }
+
+    &--current {
+      background-color: transparent;
+      outline: 3px solid $blue-gray;
+    }
+  }
+}
