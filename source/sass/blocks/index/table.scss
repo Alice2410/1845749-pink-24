@@ -1,10 +1,71 @@
 .table {
+  margin-bottom: 45px;
+
   .table__cell {
     font-family: $font-family;
-    font-size: 14px;
     line-height: 30px;
     font-weight: 400;
-    color: $blue-gray;
+    text-transform: uppercase;
     background-color: $white;
+    min-width: 280px;
+    padding: 15px 20px;
+    position: relative;
+
+    &--no::before {
+      content: "";
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background-image: url("../img/index/no.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 9px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
+    }
+
+    &--yes::before {
+      content: "";
+      width: 31px;
+      height: 21px;
+      position: absolute;
+      top: 19px;
+      right: 17px;
+      background-image: url("../img/index/yes.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 12px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
+    }
+
+    &--option {
+      padding-left: 15px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      &--option {
+        display: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      text-transform: initial;
+      padding: 8px 15px;
+      min-width: 152px;
+      box-sizing: border-box;
+    }
+
+    .table__cell-text {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
   }
 }

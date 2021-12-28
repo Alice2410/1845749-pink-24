@@ -1,9 +1,45 @@
 .copyright {
+  display: flex;
+  align-items: center;
+
+  &:focus-within {
+    outline: 2px solid $green;
+    outline-offset: 5px;
+    border-radius: 5px;
+  }
+
+  &:active {
+    outline: none;
+  }
+
   .copyright__text {
     font-family: $font-family;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: $blue-gray;
+    margin-right: 13px;
+  }
+
+  .copyright__link {
+    width: 27px;
+    height: 34px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .copyright__logo {
+    fill: $pink;
+
+    &:hover {
+      fill: $blue-gray;
+    }
+
+    &:active {
+      fill: $blue-gray;
+      opacity: 0.3;
+    }
   }
 }

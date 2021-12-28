@@ -14,6 +14,7 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
+      row-gap: 40px;
     }
 
     @media (min-width: $desktop-width) {
@@ -29,6 +30,17 @@
     color: $blue-gray;
     padding: 0;
     margin: 0;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      line-height: 68px;
+    }
   }
 
   .contacts__phone {
@@ -61,6 +73,7 @@
     line-height: 25px;
     font-weight: 700;
     color: $blue-gray;
+    margin-bottom: 0;
   }
 
   .contacts__link {
