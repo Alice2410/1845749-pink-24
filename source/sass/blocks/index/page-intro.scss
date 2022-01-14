@@ -1,24 +1,25 @@
 .page-intro {
-  width: 280px;
   margin: 0 auto;
   padding: 0 20px;
 
   .page-intro__wrapper--index {
-    @media (max-width: $mobile-width-only) {
-      padding-top: 59px;
-      margin-bottom: 266px;
+    padding-top: 95px;
+    padding-bottom: 309px;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      padding-top: 203px;
+      padding-bottom: 31px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    width: 300px;
     margin: 0;
-    margin-right: auto;
-    padding: 110px 20px;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 110px 130px;
+    padding: 110px 130px 0;
   }
 
   .page-intro__text {
@@ -29,18 +30,61 @@
     color: $white;
     text-align: center;
     margin: 0;
-    padding: 36px 0;
+    padding: 0;
+
+    &--index {
+      @media (min-width: $tablet-width) {
+        max-width: 240px;
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+
+    &--form {
+      margin: 0 auto;
+      padding: 102px 0 51px;
+      max-width: 230px;
+      line-height: 32px;
+
+      @media (min-width: $tablet-width) {
+        padding: 191px 0 74px;
+        max-width: 475px;
+        font-size: 50px;
+        line-height: 68px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 74px 0 100px;
+        max-width: 750px;
+      }
+    }
+
+    &--catalog {
+      margin: 0 auto;
+      padding: 102px 0 84px;
+      max-width: 172px;
+      line-height: 32px;
+
+      @media (min-width: $tablet-width) {
+        padding: 191px 0 143px;
+        max-width: 357px;
+        font-size: 50px;
+        line-height: 68px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding: 74px 0 100px;
+        max-width: 357px;
+      }
+    }
 
     @media (min-width: $tablet-width) {
-      font-size: 40px;
-      line-height: 48px;
-      max-width: 240px;
+      margin: 0 auto;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 50px;
       line-height: 68px;
-      max-width: initial;
     }
   }
 }

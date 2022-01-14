@@ -23,5 +23,25 @@
     text-align: center;
     padding: 54px 35px;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 91px 110px 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 100px 314px 97px;
+    }
+  }
+
+  .gallery__description-inner {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }
