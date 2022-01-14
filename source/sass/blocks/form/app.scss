@@ -1,15 +1,40 @@
 .app {
+  .app__legend {
+    margin-bottom: 40px;
+  }
+
   .app__list {
     padding: 0;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
   }
 
   .app__item {
+    position: relative;
+    display: flex;
+    align-items: center;
     list-style-type: none;
+    height: 40px;
     margin-bottom: 40px;
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  .app__input {
+    &:checked + .control__mark::before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: 11px;
+      width: 15px;
+      height: 15px;
+      background-color: $pink;
+      border-radius: 50%;
     }
   }
 }

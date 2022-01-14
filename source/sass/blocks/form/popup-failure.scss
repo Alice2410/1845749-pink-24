@@ -1,0 +1,10 @@
+.popup-failure {
+  top: 10px;
+  left: 0;
+
+  .popup-failure__button {
+    @media (min-width: $desktop-width) {
+      min-width: 296px;
+    }
+  }
+}

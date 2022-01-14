@@ -10,6 +10,7 @@
 
   &--basic-background {
     background-image: url("../img/index/back-mobile.png");
+    background-size: cover;
   }
 
   .page-header__navigation {
@@ -56,5 +57,9 @@
     @media (min-width: $desktop-width) {
       margin-left: 130px;
     }
+  }
+
+  .page-header__logo-img {
+    display: block;
   }
 }

@@ -1,24 +1,50 @@
 .achievements {
   padding: 42px 0;
 
+  .achievements__legend {
+    margin-bottom: 44px;
+  }
+
   .achievements__list {
     margin: 0;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
 
     @media (min-width: $desktop-width) {
       max-height: 200px;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      margin-bottom: 0;
     }
   }
 
   .achievements__item {
+    position: relative;
+    display: flex;
+    align-items: center;
     list-style-type: none;
-    margin-bottom: 40px;
+    height: 41px;
+    margin-bottom: 45px;
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  .achievements__input {
+    &:checked + .control__mark::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 7px;
+      width: 22px;
+      height: 16px;
+      background-image: url("../img/index/tick.svg");
+      background-repeat: no-repeat;
     }
   }
 }

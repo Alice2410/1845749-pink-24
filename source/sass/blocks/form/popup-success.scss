@@ -1,0 +1,10 @@
+.popup-success {
+  top: 410px;
+  left: 0;
+
+  .popup-success__button {
+    @media (min-width: $desktop-width) {
+      min-width: 456px;
+    }
+  }
+}
