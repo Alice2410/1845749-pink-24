@@ -36,6 +36,11 @@
     margin-bottom: 50px;
   }
 
+  .panorama__img {
+    display: block;
+    width: 100%;
+  }
+
   .panorama__description {
     @media (min-width: $tablet-width) {
       margin: 0 20px 20px;
