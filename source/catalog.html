@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <title>Pink</title>
+  <link rel="icon" href="favicon.ico">
 </head>
 <body class="page__body">
   <h1 class="visually-hidden">Приложение Pink</h1>
@@ -81,7 +83,13 @@
       </p>
       <div class="gallery__wrapper">
         <div class="panorama card">
-          <img class="panorama__img" src="img/catalog/panorama.jpg" alt="Панорама дня">
+          <div class="panorama__img-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.jpg 1x, img/catalog/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.jpg 1x, img/catalog/panorama-tablet@2x.jpg 2x">
+              <img class="panorama__img" src="img/catalog/panorama-mobile.jpg" srcset="img/catalog/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
+          </div>
           <div class="panorama__description card__description">
             <div class="panorama__author-info">
               <span class="panorama__author card__author">Анна</span>
@@ -96,7 +104,13 @@
         </div>
         <div class="gallery__card-wrapper">
           <div class="card">
-            <img class="card__img" src="img/catalog/photo-1.jpg" alt="Фотография пользователя">
+            <div class="card__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img class="card__img" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Фотография пользователя">
+              </picture>
+            </div>
             <div class="card__description">
               <div class="card__body">
                 <span class="card__author">Левон</span>
@@ -110,7 +124,13 @@
             </div>
           </div>
           <div class="card">
-            <img class="card__img" src="img/catalog/photo-2.jpg" alt="Фотография пользователя">
+            <div class="card__img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                <img class="card__img" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Фотография пользователя">
+              </picture>
+            </div>
             <div class="card__description">
               <div class="card__body">
                 <span class="card__author">Антон</span>
@@ -124,7 +144,11 @@
             </div>
           </div>
           <div class="card">
-            <img class="card__img" src="img/catalog/photo-3.jpg" alt="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
             <div class="card__description">
               <div class="card__body">
                 <span class="card__author">Борис</span>
@@ -138,7 +162,11 @@
             </div>
           </div>
           <div class="card">
-            <img class="card__img" src="img/catalog/photo-4.jpg" alt="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
             <div class="card__description">
               <div class="card__body">
                 <span class="card__author">Сергей</span>
@@ -152,7 +180,11 @@
             </div>
           </div>
           <div class="card">
-            <img class="card__img" src="img/catalog/photo-5.jpg" alt="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-5-desktop.jpg 1x, img/catalog/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-5-tablet.jpg 1x, img/catalog/photo-5-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/catalog/photo-5-mobile.jpg" srcset="img/catalog/photo-5-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
             <div class="card__description">
               <div class="card__body">
                 <span class="card__author">Максим</span>
@@ -166,7 +198,11 @@
             </div>
           </div>
           <div class="card">
-            <img class="card__img" src="img/catalog/photo-6.jpg" alt="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-6-desktop.jpg 1x, img/catalog/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-6-tablet.jpg 1x, img/catalog/photo-6-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/catalog/photo-6-mobile.jpg" srcset="img/catalog/photo-6-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
             <div class="card__description">
               <div class="card__body">
                 <span class="card__author">Надежда</span>
@@ -188,7 +224,10 @@
         <p class="upload__description">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload__user-photo" action="https://echo.htmlacademy.ru/" method="post">
           <div class="upload__user-photo-wrapper">
-            <img class="upload__user-photo-image" src="img/catalog/process-image.jpg" alt="Обработанное фото">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/catalog/photo-7-tablet.jpg 1x, img/catalog/photo-7-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/catalog/photo-7-mobile.jpg" srcset="img/catalog/photo-7-mobile@2x.jpg 2x" alt="Обработанное фото">
+            </picture>
           </div>
           <div class="process">
             <div class="process__tabs-wrapper">

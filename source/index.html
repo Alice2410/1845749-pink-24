@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="css/style.css">
   <title>Pink</title>
+  <link rel="icon" href="favicon.ico">
 </head>
 <body class="page__body">
   <h1 class="visually-hidden">Приложение Pink</h1>
@@ -36,7 +37,7 @@
       <section class="page-intro">
         <h2 class="visually-hidden">Скачатайте приложение на ваше устройство</h2>
         <div class="page-intro__wrapper page-intro__wrapper--index">
-          <p class="page-intro__text">Взгляните на жизнь иначе!</p>
+          <p class="page-intro__text page-intro__text--index">Взгляните на жизнь иначе!</p>
         </div>
         <div class="download-app">
           <a class="download-app__link" href="#">Скачать приложение</a>
@@ -100,13 +101,17 @@
         <div class="benefits__phone">
           <div class="benefits__phone-wrapper">
             <div class="benefits__phone-image-wrapper benefits__phone-image-wrapper--hidden">
-              <img class="benefits__phone-image" src="img/index/benefits-phone-gray.png" alt="Телефон с картинкой.">
+              <img class="benefits__phone-image" src="img/index/iphone1-desktop.png" srcset="img/index/iphone1-desktop@2x.png 2x" alt="Телефон с картинкой.">
             </div>
             <div class="benefits__phone-image-wrapper benefits__phone-image-wrapper--hidden">
-              <img class="benefits__phone-image" src="img/index/benefits-phone-pink.png" alt="Телефон с картинкой.">
+              <img class="benefits__phone-image" src="img/index/iphone2-desktop.png" srcset="img/index/iphone2-desktop@2x.png 2x" alt="Телефон с картинкой.">
             </div>
             <div class="benefits__phone-image-wrapper">
-              <img class="benefits__phone-image" src="img/index/benefits-phone.png" alt="Телефон с картинкой." width="186">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/index/iphone3-desktop.png 1x, img/index/iphone3-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/index/iphone-tablet.png 1x, img/index/iphone-tablet@2x.png 2x">
+                <img class="benefits__phone-image" src="img/index/iphone-mobile.png" srcset="img/index/iphone-mobile@2x.png 2x" alt="Телефон с картинкой.">
+              </picture>
             </div>
           </div>
           <ul class="benefits__list">
@@ -197,8 +202,8 @@
           </thead>
         </table>
         <p class="price__toggles slider">
-          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
-          <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
           <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
         </p>
       </div>

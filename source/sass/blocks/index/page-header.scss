@@ -4,13 +4,58 @@
   background-repeat: no-repeat;
 
   &--index-background {
-    background-image: url("../img/index/intro-hand.png"), url("../img/index/back-mobile.png");
-    background-position-y: 176px, 0;
+    background-image: url("../../../img/index/back-hand-mobile.png"), url("../../../img/index/back-mobile-index.jpg");
+    background-position: top 176px left 50%, top 0 left 0;
+    background-size: 320px 286px, 100% 462px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/index/back-hand-mobile@2x.png"), url("../../../img/index/back-mobile-index@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../../img/index/back-hand-tablet.png"), url("../../../img/index/back-tablet-index.jpg");
+      background-position: bottom 0 right 0, top 0 left 0;
+      background-size: 660px 545px, 100% 729px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/index/back-hand-tablet@2x.png"), url("../../../img/index/back-tablet-index@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../../img/index/back-hand-desktop.png"), url("../../../img/index/back-desktop-index.jpg");
+      background-position: bottom 0 right 0, top 0 left 0;
+      background-size: 1050px 645px, 100% 853px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/source/img/index/back-hand-desktop@2x.png"), url("/source/img/index/back-desktop-index@2x.jpg");
+      }
+    }
   }
 
   &--basic-background {
-    background-image: url("../img/index/back-mobile.png");
+    background-image: url("/source/img/index/back-mobile.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/source/img/index/back-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/source/img/index/back-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/source/img/index/back-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("/source/img/index/back-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/source/img/index/back-desktop@2x.jpg");
+      }
+    }
   }
 
   .page-header__navigation {
