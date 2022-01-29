@@ -104,49 +104,7 @@
     }
   }
 
-  .page-header__pink-logo {
-    fill: $white;
-
-    &:hover {
-      fill: $pink;
-    }
-
-    &:focus {
-      fill: $green;
-      outline: none;
-    }
-
-    &:active {
-      fill: $white;
-      opacity: 0.3;
-    }
-
-    &--mobile {
-      display: block;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
-
-    &--tablet {
-      display: none;
-
-      @media (min-width: $tablet-width) {
-        display: block;
-      }
-
-      @media (min-width: $desktop-width) {
-        display: none;
-      }
-    }
-
-    &--desktop {
-      display: none;
-
-      @media (min-width: $desktop-width) {
-        display: block;
-      }
-    }
+  .page-header__logo-img {
+    display: block;
   }
 }
