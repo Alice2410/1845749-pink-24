@@ -177,5 +177,10 @@
     &:active {
       color: fade-out($pink, 0.3);
     }
+
+    &--current {
+      border-bottom: 2px solid $white;
+      outline-offset: 11px;
+    }
   }
 }
